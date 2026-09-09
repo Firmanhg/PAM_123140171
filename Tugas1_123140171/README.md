@@ -67,4 +67,5 @@ PRAKTIKUM1_123140149/
 
 ## Hasil Eksekusi Aplikasi
 <img width="1600" height="846" alt="WhatsApp Image 2026-09-09 at 22 26 54" src="https://github.com/user-attachments/assets/180329d8-16cb-4218-9677-df2b58143113" />
-<img width="1600" height="846" alt="WhatsApp Image 2026-09-09 at 22 26 54" src="https://github.com/user-attachments/assets/acfe8bd2-b666-4bec-9aef-a8750440e8b7" />
+<img width="1600" height="846" alt="WhatsApp Image 2026-09-09 at 22 26 54" src="https://github.com/user-attachments/assets/025ba8b0-d3c7-4fac-9ec8-88a6808f99d4" />
+
