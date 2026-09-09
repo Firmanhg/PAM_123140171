@@ -1,35 +1,70 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop (JVM).
+# Tugas Praktikum Minggu 1 - Pengembangan Aplikasi Mobile
 
-* [/iosApp](./iosApp/iosApp) contains an iOS application. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+**Nama:** Firman H Gultom
 
-* [/shared](./shared/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./shared/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./shared/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./shared/src/jvmMain/kotlin)
-    folder is the appropriate location.
+**NIM:** 123140171
 
-### Running the apps
+**Program Studi:** Teknik Informatika
 
-Use the run configurations provided by the run widget in your IDE's toolbar. You can also use these commands and options:
+**Mata Kuliah:** Pengembangan Aplikasi Mobile
 
-- Android app: `./gradlew :androidApp:assembleDebug`
-- Desktop app:
-  - Hot reload: `./gradlew :desktopApp:hotRun --auto`
-  - Standard run: `./gradlew :desktopApp:run`
-- iOS app: open the [/iosApp](./iosApp) directory in Xcode and run it from there.
+---
+## Deskripsi Tugas
+Tugas ini berfokus pada pengenalan dan konfigurasi awal lingkungan pengembangan berbasis **Kotlin Multiplatform (KMP)** menggunakan kerangka kerja antarmuka **Compose Multiplatform**.
 
-### Running tests
+1. **Setup Lingkungan Pengembangan** 
 
-Use the run button in your IDE's editor gutter, or run tests using Gradle tasks:
+    Konfigurasi Android Studio dengan dukungan plugin Kotlin Multiplatform serta integrasi JDK 21.
+2. **Inisialisasi Proyek** 
 
-- Android tests: `./gradlew :shared:testAndroidHostTest`
-- Desktop tests: `./gradlew :shared:jvmTest`
-- iOS tests: `./gradlew :shared:iosSimulatorArm64Test`
+    Membuat proyek Compose Multiplatform yang mendukung target platform Desktop (JVM) dan Android.
+
+3. **Modifikasi UI Dasar:**
+    * Mengubah teks default *Hello World* menjadi teks salam personal (**Firman H Gultom**).
+    * Menambahkan **123140171** tepat di bawah nama.
+    * Menampilkan nama platform target yang aktif saat tombol interaktif ditekan.
+4. **Eksekusi Multiplatform** 
+
+    Menjalankan serta memverifikasi kode pada target platform Desktop (JVM).
+
+5. **Manajemen Repositori** 
+
+    Mengorganisasi struktur direktori proyek ke dalam repositori Git publik dengan dokumentasi yang lengkap.
 
 ---
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+##  Teknologi & Lingkungan Pengembangan
+* **Bahasa Pemrograman:** [Kotlin](https://kotlinlang.org/) (Multiplatform)
+* **Kerangka Antarmuka (UI Framework):** [Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/)
+* **IDE:** Android Studio Ladybug / Meerkat
+* **Java Development Kit (JDK):** OpenJDK 21 (Temurin / JetBrains Runtime)
+* **Build System:** Gradle (Kotlin DSL - `.gradle.kts`)
+* **Target Eksekusi:** Desktop JVM (Java 21) & Android Platform
+
+---
+
+##  Struktur Direktori Proyek
+Proyek menggunakan pola pembagian modul KMP standar, di mana logika dan tampilan antarmuka dipakai bersama pada modul `shared`:
+
+```text
+PRAKTIKUM1_123140149/
+├── androidApp/   
+├── desktopApp/  
+├── shared/                   
+│   └── src/
+│       ├── commonMain/       
+│       │   └── kotlin/
+│       │       └── App.kt    
+│       ├── androidMain/      
+│       └── jvmMain/          
+├── build.gradle.kts          
+├── settings.gradle.kts       
+├── README.md                 
+├── screenshot-desktop.png    
+└── screenshot-desktop2.png   
+```
+---
+
+## Hasil Eksekusi Aplikasi
+<img width="1600" height="846" alt="WhatsApp Image 2026-09-09 at 22 26 54" src="https://github.com/user-attachments/assets/180329d8-16cb-4218-9677-df2b58143113" />
+<img width="1600" height="846" alt="WhatsApp Image 2026-09-09 at 22 26 54" src="https://github.com/user-attachments/assets/acfe8bd2-b666-4bec-9aef-a8750440e8b7" />
