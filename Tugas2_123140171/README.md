@@ -52,5 +52,6 @@ Karena proyek ini menggunakan basis **Compose Multiplatform**, aplikasi akan ber
 - **Mata Kuliah:** Pengembangan Aplikasi Mobile RA
 
 **Screenshoot:**
-<img width="1021" height="753" alt="image" src="https://github.com/user-attachments/assets/0bd9394d-b334-4670-a5ab-e63bee89b2e9" />
+<img width="976" height="737" alt="image" src="https://github.com/user-attachments/assets/e74a3826-2600-4cd7-be8c-0b30032cf1fb" />
+
 
