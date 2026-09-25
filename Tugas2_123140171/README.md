@@ -2,7 +2,7 @@
 
 Proyek ini adalah simulasi aliran berita (*News Feed*) reaktif yang dibangun menggunakan **Kotlin** dan **Compose Multiplatform**. Aplikasi ini menerapkan arsitektur **MVVM (Model-View-ViewModel)** yang bersih (Clean Architecture) untuk memisahkan logika data dan antarmuka pengguna.
 
-Proyek ini disusun untuk memenuhi tugas mata kuliah **Pengembangan Aplikasi Mobile - RB**.
+Proyek ini disusun untuk memenuhi tugas mata kuliah **Pengembangan Aplikasi Mobile - RA**.
 
 ##  Pemenuhan Rubrik Penilaian
 
@@ -47,9 +47,9 @@ Karena proyek ini menggunakan basis **Compose Multiplatform**, aplikasi akan ber
 
 ---
 **Dikerjakan Oleh:**
-- **Nama:** Pradana Figo Ariasya
-- **NIM:** 123140063
-- **Mata Kuliah:** Pengembangan Aplikasi Mobile RB
+- **Nama:** Firman H Gultom
+- **NIM:** 123140171
+- **Mata Kuliah:** Pengembangan Aplikasi Mobile RA
 
 **Screenshoot:**
 <img width="1021" height="753" alt="image" src="https://github.com/user-attachments/assets/0bd9394d-b334-4670-a5ab-e63bee89b2e9" />
