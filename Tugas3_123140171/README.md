@@ -1,71 +1,36 @@
 # My Profile App
 
-Tugas Praktikum Pertemuan 3 — Compose Multiplatform Basics  
+Praktikum Pertemuan 3 — Compose Multiplatform Basics  
 **IF25-22017 Pengembangan Aplikasi Mobile**  
 Program Studi Teknik Informatika · Institut Teknologi Sumatera
 
----
-
 ## Deskripsi
 
-My Profile App adalah aplikasi multiplatform yang dibangun menggunakan **Kotlin** dan **Compose Multiplatform**. Aplikasi ini menampilkan halaman profil pengguna dengan header bergaya abu-abu elegan, informasi kontak, dan daftar keahlian.
-
----
+My Profile App merupakan aplikasi multiplatform berbasis Kotlin dan Compose Multiplatform yang menampilkan informasi profil pengguna, mulai dari foto, biodata, statistik, kontak, hingga daftar keahlian.
 
 ## Screenshot
 
 | Desktop |
 |---------|
-| <img width="868" height="988" alt="image" src="https://github.com/user-attachments/assets/f3c157a1-5707-4327-8830-ef2d15599ffe" />|
-
----
+| <img width="323" height="607" alt="image" src="https://github.com/user-attachments/assets/8f05a918-d13d-40cc-b977-bdf07d8ac328" />
+ |
 
 ## Fitur
 
-- Header profil dengan foto circular dan nama
-- Bio / deskripsi singkat pengguna
-- Statistik: jumlah proyek, IPK, dan semester
-- Tombol Follow dengan state toggle
-- List informasi kontak: Email, Telepon, Lokasi, Website/GitHub
-- List keahlian dengan ikon berwarna
-- Scrollable layout untuk semua platform
-
----
-
-## Struktur Composable Functions
-
-| Composable | Deskripsi |
-|---|---|
-| `ProfileHeader` | Header abu-abu dengan foto profil circular, nama, title, dan bio |
-| `StatItem` | Kartu angka statistik yang dapat digunakan ulang |
-| `InfoItem` | Satu baris informasi: icon + label + value — dipakai di kontak & keahlian |
-| `ProfileCard` | Container card dengan judul seksi — dipakai untuk Kontak dan Keahlian |
-| `ProfileScreen` | Halaman utama yang menyatukan semua composable |
-
----
-
-## Komponen UI yang Digunakan
-
-| Komponen | Digunakan di |
-|---|---|
-| `Column` | ProfileHeader, ProfileCard, InfoItem, ProfileScreen, StatItem |
-| `Row` | InfoItem, baris tombol Follow, baris statistik |
-| `Box` | Avatar circular, icon circle, latar header |
-| `Card` | ProfileCard, stats card |
-| `Text` | Nama, title, bio, label, value, statistik |
-| `Button` | Tombol Follow / Following (dengan state toggle) |
-| `Icon` | Avatar Person, icon Email / Phone / Location / dll |
-
----
+- Menampilkan foto dan identitas pengguna.
+- Menyediakan deskripsi singkat tentang profil.
+- Menampilkan statistik proyek, IPK, dan semester.
+- Tombol Follow yang dapat diubah menjadi Following.
+- Menampilkan informasi kontak pengguna.
+- Menyediakan daftar keahlian beserta ikon.
+- Mendukung tampilan yang dapat di-scroll.
 
 ## Teknologi
 
-- **Kotlin** — bahasa pemrograman utama
-- **Compose Multiplatform** — UI framework deklaratif (JetBrains)
-- **Material 3** — komponen UI dan tema
-- **Material Icons Extended** — library ikon
-
----
+- Kotlin
+- Compose Multiplatform
+- Material 3
+- Material Icons Extended
 
 ## Cara Menjalankan
 
@@ -77,15 +42,13 @@ My Profile App adalah aplikasi multiplatform yang dibangun menggunakan **Kotlin*
 
 ### Android
 
-1. Buka project di Android Studio
-2. Pilih target **composeApp**
-3. Jalankan di emulator atau perangkat fisik
-
----
+1. Buka proyek menggunakan Android Studio.
+2. Pilih konfigurasi `composeApp`.
+3. Jalankan aplikasi melalui emulator atau perangkat Android.
 
 ## Dependency Tambahan
 
-Tambahkan baris berikut di `composeApp/build.gradle.kts` pada blok `commonMain.dependencies`:
+Pastikan dependency berikut sudah ditambahkan pada bagian `commonMain.dependencies` di file `composeApp/build.gradle.kts`.
 
 ```kotlin
 implementation(compose.materialIconsExtended)
@@ -93,27 +56,26 @@ implementation(compose.materialIconsExtended)
 
 ## Struktur File
 
-```
+```text
 composeApp/
 └── src/
     └── commonMain/
         └── kotlin/
             └── org/example/project/
-                ├── App.kt            ← entry point, memanggil ProfileScreen()
-                └── ProfileScreen.kt  ← semua composable dan logika UI
+                ├── App.kt
+                └── ProfileScreen.kt
 ```
 
+## Identitas Mahasiswa
+
+| Keterangan | Informasi |
+|---|---|
+| Nama | Firman Gultom |
+| NIM | 123140171 |
+| Kelas | PAM RA |
+| Program Studi | Teknik Informatika |
+| Institusi | Institut Teknologi Sumatera |
+
 ---
 
-## Penulis
-
-| |                              |
-|---|------------------------------|
-| **Nama** | Pradana Figo Ariasya         |
-| **NIM** | 123140063                    |
-| **Kelas** | Pengembangan Aplikasi Mobile RB|
-| **Institusi** | Institut Teknologi Sumatera  |
-
----
-
-*Tugas Praktikum 3 · Tahun Akademik Genap 2025/2026*
+*Tugas Praktikum 3 — Tahun Akademik Genap 2025/2026*
